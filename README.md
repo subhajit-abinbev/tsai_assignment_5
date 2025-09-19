@@ -124,71 +124,6 @@ Epoch [19/20] - Train Loss: 0.0141, Train Acc: 99.54% - Test Loss: 0.0307, Test 
 Epoch [20/20] - Train Loss: 0.0112, Train Acc: 99.65% - Test Loss: 0.0588, Test Acc: 98.47%
 ```
 
-### Performance Visualization
-The notebook includes comprehensive visualization of:
-- **Training vs Test Loss** curves over 20 epochs
-- **Training vs Test Accuracy** curves over 20 epochs
-- **Sample predictions** on test data
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-pip install torch torchvision matplotlib torchsummary
-```
-
-### Running the Model
-1. Clone this repository
-2. Open `mnist_model_training_v1.ipynb` in Jupyter Notebook or VS Code
-3. Run all cells sequentially
-4. View training progress and final results
-
-### Key Notebook Sections
-1. **Data Loading & Preprocessing**: MNIST dataset preparation
-2. **Model Definition**: CNN architecture implementation
-3. **Training Loop**: 20-epoch training with metrics tracking
-4. **Performance Analysis**: Loss/accuracy visualization
-5. **Model Summary**: Parameter count and architecture details
-
-## 📊 Model Performance Analysis
-
-### Strengths
-- ✅ Deep architecture for feature extraction
-- ✅ Batch normalization for training stability
-- ✅ Adaptive pooling for parameter efficiency
-- ✅ Comprehensive metrics tracking
-
-### Areas for Improvement
-- 🔄 Parameter count is relatively high (420K+ parameters)
-- 🔄 Could explore more efficient architectures
-- 🔄 Learning rate scheduling could improve convergence
-- 🔄 Data augmentation could enhance generalization
-
-## 🔮 Next Iterations
-
-Future versions will focus on:
-1. **Parameter Reduction**: Target <20K parameters
-2. **Architecture Optimization**: More efficient designs
-3. **Advanced Techniques**: Learning rate scheduling, dropout, data augmentation
-4. **Performance Targets**: Achieving 99.4%+ accuracy
-
-## 📝 Notes
-
-- This is Version 1 of our MNIST model development
-- Model achieves good performance but has room for optimization
-- Serves as baseline for future improvements
-- All training metrics and visualizations are preserved in the notebook
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-**Project Status**: ✅ Completed - Version 1 & 2  
-**Current Focus**: Parameter optimization and 99%+ accuracy targets  
-**Last Updated**: September 2025
-
 ---
 
 # 🏗️ Version 2: Optimized Model
@@ -298,57 +233,6 @@ Epoch [18/20] - Train Loss: 0.0006, Train Acc: 100.00% - Test Loss: 0.0157, Test
 Epoch [19/20] - Train Loss: 0.0005, Train Acc: 100.00% - Test Loss: 0.0149, Test Acc: 99.54%
 Epoch [20/20] - Train Loss: 0.0005, Train Acc: 100.00% - Test Loss: 0.0152, Test Acc: 99.55%
 ```
-
-### Performance Visualization
-The V2 notebook includes comprehensive visualization of:
-- **Training vs Test Loss** curves over 20 epochs
-- **Training vs Test Accuracy** curves over 20 epochs
-- **Learning Rate Schedule** visualization
-- **Model comparison** with V1
-
-## 🚀 Quick Start
-
-### Prerequisites
-```bash
-pip install -r requirements.txt
-```
-
-### Running V2 Model
-1. Clone this repository
-2. Open `mnist_model_training_v2.ipynb` in Jupyter Notebook or VS Code
-3. Run all cells sequentially
-4. View training progress and final results
-
-### Key V2 Notebook Sections
-1. **Data Loading & Preprocessing**: MNIST dataset preparation
-2. **Optimized Model Definition**: Efficient CNN architecture
-3. **Advanced Training Loop**: 20-epoch training with LR scheduling
-4. **Performance Analysis**: Comprehensive loss/accuracy visualization
-5. **Model Summary**: Parameter efficiency analysis
-
-## 📊 V2 Model Performance Analysis
-
-### Strengths
-- ✅ **Massive parameter reduction** (95%+ fewer parameters than V1)
-- ✅ **Global Average Pooling** eliminates parameter-heavy FC layers
-- ✅ **Advanced optimization** with AdamW and LR scheduling
-- ✅ **Better regularization** with dropout and weight decay
-- ✅ **Efficient architecture** designed for parameter efficiency
-- ✅ **Target compliance** (<20K parameters achieved)
-
-### V2 Achievements
-- 🎯 **Parameter Target**: Successfully achieved <20K parameters
-- 🎯 **Architecture Optimization**: Efficient channel progression
-- 🎯 **Advanced Training**: Modern optimization techniques
-- 🎯 **Regularization**: Multiple techniques to prevent overfitting
-
-## 🔮 Future Iterations
-
-Future versions will focus on:
-1. **99%+ Accuracy**: Fine-tuning to reach 99%+ test accuracy
-2. **Data Augmentation**: Rotation, translation for better generalization
-3. **Advanced Architectures**: Residual connections, attention mechanisms
-4. **Model Compression**: Quantization and pruning techniques
 
 ---
 
@@ -517,7 +401,7 @@ pip install -r requirements.txt
 | Metric | V1 | V2 | V3 |
 |--------|----|----|----| 
 | **Parameters** | 420,614 | 99,746 | 18,594 |
-| **Reduction from V1** | - | 76% | 95.7%+ |
+| **Reduction from V1** | - | 76% | 95.7% |
 | **Test Accuracy** | 98.47% | 99.55% | 99.47% |
 | **Architecture** | Deep baseline | First optimization | **Final perfection** |
 
